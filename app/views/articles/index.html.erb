@@ -1,4 +1,22 @@
-<h1>Listing Articles</h1>
+<h1 class="text-center mt-4">Listing Articles</h1>
+<div class="container">
+  <% @artilces.each do |article| %>
+  <div class="card text-center mt-4">
+    <div class="card-header">
+    By Pooja Karale
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+    <div class="card-footer text-muted">
+      2 days ago
+    </div>
+  </div>
+  <%end%>
+</div>
+
 <table>
     <thead>
        <tr>
