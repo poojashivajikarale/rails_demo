@@ -9,8 +9,11 @@
   </head>
 
   <body class="d-flex flex-column">
-    <%= render 'layouts/flash_messages'%>
     <%= render 'layouts/navigation'%>
-    <%= yield %>
+    <div id="page-content">
+       <%= render 'layouts/flash_messages'%>
+       <%= yield %>
+    </div>
+    <%= render 'layouts/footer'%>
   </body>
 </html>
