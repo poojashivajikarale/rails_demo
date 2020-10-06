@@ -17,6 +17,7 @@ class ArticlesController < ApplicationController
 
    def create
       @article = Article.new(permit_params)
+      @article.user = User.first
       if @article.save
          flash[:note] = "The article created successfully"
          redirect_to @article
