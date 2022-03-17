@@ -5,7 +5,7 @@ class ArticlesController < ApplicationController
       @articles = Article.paginate(page: params[:page], per_page: 5)
       p "hello pooja"
       p "hello world"
-
+      p "rebase changes"
    end
 
    def show
